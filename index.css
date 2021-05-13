@@ -1,0 +1,13 @@
+body{
+    background-image: url(forest.jpg);
+    
+}
+#item
+{
+    cursor: pointer;
+    top:50px;
+    left:50px;
+    position: absolute;
+    transition: all 1s;
+    opacity: 0.8;
+}

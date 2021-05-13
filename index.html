@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body onload="loadBigFoot()">
+    <img id ="item" src="./bigfoot.png" onclick="clik()">
+    
+</body>
+<script>
+    var p = document.getElementById("item");
+    function loadBigFoot()
+    {
+        document.getElementById("item").src = 'bigfoot.png';
+    }
+    function clik()
+    {
+        x = Math.floor(Math.random()*300);
+        y = Math.floor(Math.random()*300);
+        p.style.top = x+'px';
+        p.style.left = y+ 'px';
+       alert("You won");
+        
+    }
+</script>
+</html>
